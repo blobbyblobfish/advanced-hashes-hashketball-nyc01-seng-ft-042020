@@ -197,11 +197,11 @@ def big_shoe_rebounds
     end
   end
         
+        binding.pry
   game_hash.each do |team, team_data|
     team_data[:players].each do |player_data|
       if player_data[:shoe] == biggest_shoe_size
         return player_data[:rebounds]
-        binding.pry
       end
     end
   end
